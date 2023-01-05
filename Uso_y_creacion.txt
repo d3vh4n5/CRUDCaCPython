@@ -1,0 +1,26 @@
+'''
+Este sería el crud final al dia 15/12/2022
+Comando de creación en pip pyinstaller:
+pyinstaller --windowed --onefile --icon=".\IMG\hansicon.ico" CRUD3.py
+
+'''
+
+Una vez creado con el pyinstaller, se tiene que copiar la base de datos (mi_db) y la carpeta IMG 
+junto con el archivo creado por el pyinstar en la carpeta "dist". Sino tirará errores de que
+no se encuentran archivos .ico, o no se encuentran las tablas de la db.
+
+
+xxxx Funcionamiento una vez creado xxxx
+
+Funciona de la siguiente manera:
+-El archivo CRUD3 y mi_db tienen que estar juntos en la misma carpeta
+
+-Usando el numero de legajo se pueden realizar consultas a la DB, escribir numeros y consultar,
+	Para chequear que todo funcione bien, se puede listar la tabla actual de la base de datos
+	haciendo click en BBDD-->Listar alumnos
+
+-Si en algun momento salta error de "Revise la conexión a la DB", vaya a BBDD-->Concetar con BBDD
+
+-La Localidad y la Provincia no se pueden modificar, ya que son parte de la información de la escuela
+
+-Al leer o listar un alumno, su número de legajo no se podrá modificar, ya que es un dato inmutable.
